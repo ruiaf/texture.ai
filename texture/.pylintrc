@@ -1,0 +1,9 @@
+[MASTER]
+extension-pkg-whitelist=numpy,torch
+
+[TYPECHECK]
+ignored-modules=numpy,torch
+ignored-classes=numpy,torch
+
+[MESSAGES CONTROL]
+disable=R0903,W0221,C0111
