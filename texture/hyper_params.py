@@ -27,7 +27,7 @@ class HyperParams(dict):
     def default_universal(cls):
         params = cls()
 
-        params.embed_size = 512
+        params.embed_size = 128 
         return params
 
     @classmethod
@@ -42,11 +42,11 @@ class HyperParams(dict):
     def default_doc(cls):
         params = cls()
 
-        params.lang_embed_size = 64
-        params.text_embed_size = 512
+        params.lang_embed_size = 10
+        params.text_embed_size = 128
         params.break_embed_size = 8
         params.caps_embed_size = 8
-        params.toks_embed_size = 512
+        params.toks_embed_size = 128
         return params
 
     @classmethod

@@ -108,7 +108,7 @@ class DocClassifierTask(SingleTask):
             hyper_params)
         self.model.share_memory()
         print(self.model)
-        self.learning_rate = 0.000001
+        self.learning_rate = 0.01
         self.optimizer = torch.optim.SGD(
             self.model.parameters(), lr=self.learning_rate)
 
